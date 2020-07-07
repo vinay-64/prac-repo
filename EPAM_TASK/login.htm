@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>  
+	function validateRegistrationform(){
+		var name=document.myform.name.value;  
+		var password=document.myform.password.value;  
+		if (name==null || name=="")
+		{  
+			alert("Name can't be blank");  
+			return false;  
+		}
+		else if(password.length<6)
+		{  
+			alert("Password must be at least 6 characters long.");  
+			return false;  
+		}  
+	}  
+	</script>
+    </head>
+<body>
+    <div style="border: 1px solid black; width:30.5% ;padding-left: 300px ; padding-bottom: 10px ; background-color: #2EF0EF ">Sign up</div>
+        <br>
+            <form name="myform" method="post" action="abc.jsp" onsubmit="return validateRegistrationform()">
+                <input style="width: 50% ; padding-top: 10px ; padding-bottom: 10px;"  type="text" placeholder="mail@example.com" name="name" ><br><br>
+                <input style="width: 50% ;padding-top: 10px ; padding-bottom: 10px;" type="text" placeholder="password" name="password"><br><br>
+                <input style="width: 50% ;padding-top: 10px ; padding-bottom: 10px; background-color: #2EF0EF " type="submit" value="SIGN IN" >
+
+            </form>
+            <p>Forget your password?--------------------------------------------------------------------------------------------------------Register</p><br>
+            <p>---------------------------------------------------------------------OR--------------------------------------------------------------------</p><br>
+            <input style="width: 50% ;padding-top: 10px ; padding-bottom: 10px; background-color: #2E64EF " type="button" value="f" ><br>
+            <input style="width: 50% ;padding-top: 10px ; padding-bottom: 10px; background-color: #EF592E " type="button" value="g" ><br>
+            <input style="width: 50% ;padding-top: 10px ; padding-bottom: 10px; background-color: #98F60D " type="button" value="< EPAM LOGIN >" >  
+</body> 
+</html> 
